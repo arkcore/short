@@ -24,7 +24,7 @@
   },
   "dependencies":{
     "node-promise":"0.5.8",
-    "mongoose":"3.6.15",
+    "mongoose":"3.8.14",
     "short-id":"0.1.0-1"
   },
   "devDependencies":{
