@@ -3,14 +3,14 @@
  * @model ShortURL
  */
 
-var options
-  , ShortURLSchema
-  , mongoose = require('mongoose')
-  , wrapper = require('./prototype.js')
-  , Schema = mongoose.Schema
-  , ObjectId = Schema.ObjectId;
+var options,
+  ShortURLSchema,
+  mongoose = require('mongoose'),
+  wrapper = require('./prototype.js'),
+  Schema = mongoose.Schema,
+  ObjectId = Schema.ObjectId;
 
-options = { 
+options = {
   versionKey : false
 };
 

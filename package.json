@@ -1,7 +1,7 @@
 {
-  "name":"short",
-  "version":"2.3.0",
-  "author":"Edward Hotchkiss <edwardhotchkiss@me.com>",
+  "name":"short-url-cb",
+  "version":"1.0.0",
+  "author":"Vitaly Aminev <v@aminev.me>",
   "description":"Node.js URL Shortener backed by Mongoose.js",
   "contributors":[
     { "name": "Edward Hotchkiss", "email": "edwardhotchkiss@me.com" },
@@ -12,18 +12,17 @@
     { "name": "Patrick Williams", "github": "https://github.com/pwmckenna" },
     { "name": "Niklas Nihlén", "github": "https://github.com/nippe" }
   ],
-  "homepage": "http://edwardhotchkiss.github.com/short",
+  "homepage": "https://github.com/arkcore/short",
   "repository":{
     "type":"git",
-    "url":"git://github.com/edwardhotchkiss/short.git"
+    "url":"git://github.com/arkcore/short.git"
   },
-  "keywords":["short","url","shortener","tiny","uri","vanity","bit.ly"],
+  "keywords": ["short","url","shortener","tiny","uri","vanity","bit.ly"],
   "main":"./lib/short",
   "engines":{
     "node":">=0.10.0"
   },
   "dependencies":{
-    "node-promise":"0.5.8",
     "mongoose":"3.8.14",
     "short-id":"0.1.0-1"
   },
@@ -31,11 +30,11 @@
     "vows":"0.7.0"
   },
   "bugs": {
-    "url": "https://github.com/edwardhotchkiss/short/issues"
+    "url": "https://github.com/arkcore/short/issues"
   },
   "licenses":[{
     "type":"MIT",
-    "url":"http://github.com/edwardhotchkiss/short/LICENSE"
+    "url":"http://github.com/arkcore/short/LICENSE"
   }],
   "scripts":{
     "test":"vows test/*.test.js --spec"

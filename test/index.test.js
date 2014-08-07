@@ -3,10 +3,10 @@
  * @list dependencies
  */
 
-var vows = require('vows')
-  , assert = require('assert')
-  , mongoose = require('mongoose')
-  , short = require('../lib/short');
+var vows = require('vows'),
+    assert = require('assert'),
+    mongoose = require('mongoose'),
+    short = require('../lib/short');
 
 mongoose.set('debug', true);
 
@@ -34,17 +34,13 @@ vows.describe('general module tests').addBatch({
   'when creating a short url and then retrieving it':{
     topic:function() {
       var context = this;
-      var generatePromise = short.generate({ URL : 'http://nodejs.org/' });
-      generatePromise.then(function(ShortURLObject) {
-        var hash = ShortURLObject.hash
-          , retrievePromise = short.retrieve(hash);
-        retrievePromise.then(function(ShortURLObject) {
-          context.callback(null, ShortURLObject);
-        }, function(error) {
-          context.callback(error, null);
-        })
-      }, function(error) {
-        context.callback(error, null);
+      short.generate({ URL : 'http://nodejs.org/'}, function (error, ShortURLObject) {
+        if (error) {
+          return context.callback(error, null);
+        }
+
+        var hash = ShortURLObject.hash;
+        short.retrieve(hash, context.callback);
       });
     },
     'there should be no errors':function(error, ShortURLObject) {
@@ -64,12 +60,7 @@ vows.describe('general module tests').addBatch({
   'when .list()ing Shortened URLs':{
     topic: function() {
       var context = this;
-      var listPromise = short.list();
-      listPromise.then(function(URLs) {
-        context.callback(null, URLs);
-      }, function(error) {
-        context.callback(error, null);
-      });
+      short.list(context.callback);
     },
     'there should be no errors':function(error, URLs) {
       assert.isNull(error);
