@@ -1,42 +1,73 @@
 {
-  "name":"short-url-cb",
-  "version":"1.0.1",
-  "author":"Vitaly Aminev <v@aminev.me>",
-  "description":"Node.js URL Shortener backed by Mongoose.js",
-  "contributors":[
-    { "name": "Edward Hotchkiss", "email": "edwardhotchkiss@me.com" },
-    { "name": "Kevin Roth", "github": "http://github.com/thinkroth" },
-    { "name": "Chase Brammer", "github":"https://github.com/cbrammer" },
-    { "name": "Chris Lynch", "github":"https://github.com/lynchseattle" },
-    { "name": "CashLee", "github": "https://github.com/lbj96347" },
-    { "name": "Patrick Williams", "github": "https://github.com/pwmckenna" },
-    { "name": "Niklas Nihlén", "github": "https://github.com/nippe" }
+  "name": "short-url-cb",
+  "version": "1.0.2",
+  "author": "Vitaly Aminev <v@aminev.me>",
+  "description": "Node.js URL Shortener backed by Mongoose.js",
+  "contributors": [
+    {
+      "name": "Edward Hotchkiss",
+      "email": "edwardhotchkiss@me.com"
+    },
+    {
+      "name": "Kevin Roth",
+      "github": "http://github.com/thinkroth"
+    },
+    {
+      "name": "Chase Brammer",
+      "github": "https://github.com/cbrammer"
+    },
+    {
+      "name": "Chris Lynch",
+      "github": "https://github.com/lynchseattle"
+    },
+    {
+      "name": "CashLee",
+      "github": "https://github.com/lbj96347"
+    },
+    {
+      "name": "Patrick Williams",
+      "github": "https://github.com/pwmckenna"
+    },
+    {
+      "name": "Niklas Nihlén",
+      "github": "https://github.com/nippe"
+    }
   ],
   "homepage": "https://github.com/arkcore/short",
-  "repository":{
-    "type":"git",
-    "url":"git://github.com/arkcore/short.git"
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/arkcore/short.git"
   },
-  "keywords": ["short","url","shortener","tiny","uri","vanity","bit.ly"],
-  "main":"./lib/short",
-  "engines":{
-    "node":">=0.10.0"
+  "keywords": [
+    "short",
+    "url",
+    "shortener",
+    "tiny",
+    "uri",
+    "vanity",
+    "bit.ly"
+  ],
+  "main": "./lib/short",
+  "engines": {
+    "node": ">=0.10.0"
   },
-  "dependencies":{
-    "mongoose":"3.8.14",
-    "short-id":"0.1.0-1"
+  "dependencies": {
+    "mongoose": "^3.8.15",
+    "short-id": "0.1.0-1"
   },
-  "devDependencies":{
-    "vows":"0.7.0"
+  "devDependencies": {
+    "vows": "0.7.0"
   },
   "bugs": {
     "url": "https://github.com/arkcore/short/issues"
   },
-  "licenses":[{
-    "type":"MIT",
-    "url":"http://github.com/arkcore/short/LICENSE"
-  }],
-  "scripts":{
-    "test":"vows test/*.test.js --spec"
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/arkcore/short/LICENSE"
+    }
+  ],
+  "scripts": {
+    "test": "vows test/*.test.js --spec"
   }
 }
