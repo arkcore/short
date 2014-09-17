@@ -1,6 +1,6 @@
 {
   "name": "short-url-cb",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Vitaly Aminev <v@aminev.me>",
   "description": "Node.js URL Shortener backed by Mongoose.js",
   "contributors": [
@@ -52,7 +52,7 @@
     "node": ">=0.10.0"
   },
   "dependencies": {
-    "mongoose": "^3.8.15",
+    "mongoose": "^3.8.16",
     "short-id": "0.1.0-1"
   },
   "devDependencies": {
